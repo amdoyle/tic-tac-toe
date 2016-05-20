@@ -1,3 +1,12 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 100%;
+}
+
 table {
   border: 2px solid black;
   margin: auto;
@@ -5,10 +14,52 @@ table {
 }
 
 td {
-    font-size: 150px;
+    font-size: 75px;
     border: 2px solid black;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     cursor: pointer;
+}
+
+#sky {
+  background-color: rgba(164, 238, 255, .5);
+  height: 75%;
+  width: 100%;
+  margin: -5% 5% -5% -5%;
+  padding: 5%;
+  -ms-align-items: flex-start;
+  align-self: flex-start;
+}
+
+#mainContent {
+  align-self: center;
+  padding: 5% 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1#mainContent {
+  align-self: center;
+}
+
+#gameBoard {
+  align-self: center;
+}
+
+button#reset {
+  align-self: center;
+  margin: 5% 0%;
+}
+
+#ground {
+  background-color: rgb(0, 124, 52);
+  height: 25%;
+  width: 100%;
+  margin: -5%;
+  padding: 5%;
+  align-self: flex-end;
+
 }

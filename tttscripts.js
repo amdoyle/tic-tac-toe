@@ -25,7 +25,7 @@ $(document).on('ready', function(){
     if ( turns % 2 ){
       // oldCell.replaceWith("<td class='squareXO'> O </td>");
       containerO.push(oldCell[0].className);
-      oldCell.addClass("squareO").html("O");
+      oldCell.addClass("squareO").html('<img class="bear" src="bear.svg" alt="bear played" />');
       if ( (turns/2) >= 3 ){
         convertScore(containerO);
       }
@@ -33,7 +33,7 @@ $(document).on('ready', function(){
     } else {
       // oldCell.replaceWith("<td class='squareXO'> X </td>");
       containerX.push(oldCell[0].className);
-      oldCell.addClass("squareX").html("X");
+      oldCell.addClass("squareX").html('<img class="foot" src="foot.svg" alt="human played" />');
       if ( (turns/2) >= 3 ){
         convertScore(containerX);
       }
@@ -51,7 +51,7 @@ $(document).on('ready', function(){
       // containerX = [];
       // turns = 1;
 
-      // $('td').bind("click");
+      // $('td').removeClass("squareO");
     });
 
   // Converts score to parseInt
@@ -64,10 +64,8 @@ $(document).on('ready', function(){
     // Calls the function to check winner
     if(turns % 2){
       checkWinner(someNum, playerO);
-      console.log("check winner");
     }else {
       checkWinner(someNum, playerX);
-      console.log("check winner");
     }
 
   }

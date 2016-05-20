@@ -1,74 +1,168 @@
-#container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
-  height: 100%;
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (min-device-width: 314px)
+  and (max-device-width: 736px) {
+    body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+    }
+
+    #container{
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #mainContent {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #sky {
+
+      background-color: rgba(164, 238, 255, .5);
+
+    }
+      #sky {
+        background-color: rgba(164, 238, 255, .5);
+        width: 100%;
+        margin: 0% 0% 0% -25%;
+        padding-top: 10%;
+        /*padding-bottom: 15%;*/
+        /*padding-right: 5%;*/
+        padding-left: 15%;
+        -ms-align-items: flex-start;
+        align-self: flex-start;
+        overflow: auto;
+        align-self: center;
+        display: flex;
+        flex-flow: column;
+      }
+
+      #gameBoard {
+        align-self: center;
+        margin: 0;
+      }
+
+      td {
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        font-size: 5em;
+        margin: 0px;
+      }
+
+      table {
+        border: 2px solid black;
+        border-collapse:collapse;
+        margin: auto;
+
+      }
+
+
+      h1 {
+        align-self: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4em;
+      }
+
+     button#reset {
+          align-self: center;
+          margin: 5% 0%;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: normal;
+          font-size: 2em;
+          background: white;
+          border-style: none;
+        }
+
+    #ground {
+        background-color: rgb(0, 124, 52);
+        width: 100%;
+        height: 50%;
+        margin-bottom: -10%;
+        margin-left: -5%;
+        margin-right: -5%;
+        padding: 25%;
+        align-self: flex-end;
+        overflow: hidden;
+        overflow: auto;
+      }
+
+      #ground p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+    }
+
+}
+/* Portrait */
+@media screen
+  and (min-device-width: 314px)
+  and (max-device-width: 736px)
+  and (orientation: portrait) {
+
 }
 
-table {
-  border: 2px solid black;
-  margin: auto;
-  border-collapse:collapse;
-}
+/* Landscape */
+@media screen
+  and (min-device-width: 314px)
+  and (max-device-width: 736px)
+  and (orientation: landscape) {
 
-td {
-    font-size: 75px;
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    cursor: pointer;
 }
-
-#sky {
-  background-color: rgba(164, 238, 255, .5);
-  height: 75%;
-  width: 100%;
-  margin: -5% 5% -5% -5%;
-  padding: 5%;
-  -ms-align-items: flex-start;
-  align-self: flex-start;
-}
-
-#mainContent {
-  align-self: center;
-  padding: 5% 25%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-h1 {
-  align-self: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#gameBoard {
-  align-self: center;
-}
-
-button#reset {
-  align-self: center;
-  margin: 5% 0%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-}
-
-#ground {
-  background-color: rgb(0, 124, 52);
-  height: 25%;
-  width: 100%;
-  margin: -5%;
-  padding: 5%;
-  align-self: flex-end;
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 }
 
-#ground p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+/* Portrait */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px) {
+    td {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        text-align: center;
+        cursor: pointer;
+        font-size: 5em;
+    }
 }

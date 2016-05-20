@@ -41,8 +41,9 @@ td {
   justify-content: space-between;
 }
 
-h1#mainContent {
+h1 {
   align-self: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #gameBoard {
@@ -52,6 +53,8 @@ h1#mainContent {
 button#reset {
   align-self: center;
   margin: 5% 0%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
 
 #ground {
@@ -62,4 +65,10 @@ button#reset {
   padding: 5%;
   align-self: flex-end;
 
+}
+
+#ground p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }

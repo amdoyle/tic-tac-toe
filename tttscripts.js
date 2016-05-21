@@ -47,11 +47,6 @@ $(document).on('ready', function(){
 
     $('#reset').on('click', function(){
     location.reload();
-      // containerO = [];
-      // containerX = [];
-      // turns = 1;
-
-      // $('td').removeClass("squareO");
     });
 
   // Converts score to parseInt

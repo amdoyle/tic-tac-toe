@@ -25,7 +25,7 @@ $(document).on('ready', function(){
     if ( turns % 2 ){
       // oldCell.replaceWith("<td class='squareXO'> O </td>");
       containerO.push(oldCell[0].className);
-      oldCell.addClass("squareO").html('<img class="bear" src="bear.svg" alt="bear played" />');
+      oldCell.addClass("squareO").html('<img class="bear" src="images/bear.svg" alt="bear played" />');
       if ( (turns/2) >= 3 ){
         convertScore(containerO);
       }
@@ -33,7 +33,7 @@ $(document).on('ready', function(){
     } else {
       // oldCell.replaceWith("<td class='squareXO'> X </td>");
       containerX.push(oldCell[0].className);
-      oldCell.addClass("squareX").html('<img class="foot" src="foot.svg" alt="human played" />');
+      oldCell.addClass("squareX").html('<img class="foot" src="images/foot.svg" alt="human played" />');
       if ( (turns/2) >= 3 ){
         convertScore(containerX);
       }

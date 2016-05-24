@@ -61,7 +61,7 @@ The file does use flexbox for positioning, but the rest is plain CSS. */
 
   button#reset {
     align-self: center;
-    margin: 2% 0%;
+    margin: 5% 0%;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 1em;
@@ -154,11 +154,6 @@ The file does use flexbox for positioning, but the rest is plain CSS. */
     margin-left: 8%;
     width: 15%;
     z-index: 2;
-  }
-
-  .bear {
-    height: 100px;
-    align-self: center;
   }
 
   #tent{

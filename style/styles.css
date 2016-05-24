@@ -319,6 +319,20 @@ The file does use flexbox for positioning, but the rest is plain CSS. */
 
 @media (min-width: 5001px) {
 
+  td {
+    width: 320px;
+    height: 320px;
+  }
+
+  .foot {
+    height: 275px;
+    padding-left: 81px;
+  }
+
+  .bear {
+    height: 275px;
+  }
+
   #groundElemets {
     margin-top: -11%;
   }

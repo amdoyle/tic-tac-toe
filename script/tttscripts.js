@@ -81,10 +81,10 @@ $(document).on('ready', function(){
             alert(`${player} Wins!`);
             if(turns % 2){
               scoreO++;
-              updateScore(scoreO);
+              // updateScore(scoreO);
             } else {
               scoreX++;
-              updateScore(scoreX);
+              // updateScore(scoreX);
             }
             return;
           }

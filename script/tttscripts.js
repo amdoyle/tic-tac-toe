@@ -6,8 +6,8 @@ $(document).on('ready', function(){
   var turns = 1;
   var playerX = "x";
   var playerO = "O";
-  var playerX = prompt("Camper - please enter your name:");
-  var playerO = prompt("Bear - please enter your name:");
+  var playerX = "Camper";
+  var playerO = "Bear";
   // This code will be implimented once the player scoreboard is implimented
     // $('#playerX').html(playerX);
     // $('#playerO').html(playerO);

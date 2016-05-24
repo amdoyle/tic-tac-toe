@@ -1,4 +1,5 @@
-
+/* This is the main CSS apge for the file. Current this is for desktop only.
+The file does use flexbox for positioning, but the rest is plain CSS. */
 body {
   height: 100%;
   width: 100%;
@@ -17,52 +18,49 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
-  #sky {
+#sky {
+  width: 100%;
+  margin: 0% 0% 0% 0%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  -ms-align-items: flex-start;
+  align-self: flex-start;
+  overflow: auto;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+}
 
-    width: 100%;
-    margin: 0% 0% 0% 0%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    -ms-align-items: flex-start;
-    align-self: flex-start;
-    overflow: auto;
-    align-self: center;
-    display: flex;
-    flex-flow: column;
-  }
+#gameBoard {
+  align-self: center;
+  margin: 0;
+  z-index: 5;
+}
 
-  #gameBoard {
-    align-self: center;
-    margin: 0;
-    z-index: 5;
-  }
+td {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  font-size: 5em;
+  margin: 0px;
+}
 
-  td {
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-    font-size: 5em;
-    margin: 0px;
-  }
+table {
+  border: 2px solid black;
+  border-collapse:collapse;
+  margin: auto;
+}
 
-  table {
-    border: 2px solid black;
-    border-collapse:collapse;
-    margin: auto;
-  }
+h1 {
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  padding-bottom: 2%;
+}
 
-
-  h1 {
-    align-self: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
-    padding-bottom: 2%;
-  }
-
- button#reset {
+button#reset {
   align-self: center;
   margin: 2% 0%;
   font-family: 'Open Sans', sans-serif;
@@ -82,15 +80,12 @@ button#reset:hover {
 button#reset:focus {
   outline: none;
 }
+
 #ground {
   background-color: rgb(0, 124, 52);
   width: 100%;
   height: 1000px;
-  /*margin-top: -20%;*/
-  /*margin-bottom: -10%;*/
-  margin-left: -5%;
-  margin-right: -5%;
-  /*padding: 5%;*/
+  margin: 0% -5%;
   align-self: flex-end;
   align-self: center;
   overflow: hidden;
@@ -104,23 +99,6 @@ button#reset:focus {
   font-size: .5em;
   padding-left: 2%;
   margin-top: 8%;
-}
-
-.squareO {
-  /*image: url(bear.svg) no-repeat;*/
-  /*padding-left: 5%;
-  margin: 0px;
-  width: 75px;*/
-  /*display: flex;*/
-}
-
-.squareX {
-  /*image: url(foot.svg) no-repeat;*/
-  /*padding-left: 5%;
-  margin: 0px;
-  width: 75px;*/
-  /*display: flex;*/
-
 }
 
 .foot {
@@ -138,47 +116,42 @@ button#reset:focus {
 }
 
 #groundElemets {
-    z-index: 2;
-    margin-top: -10%;
-    margin-bottom: -10%;
-    margin-left: -25%;
-    padding: 0px;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
+  z-index: 2;
+  margin-top: -10%;
+  margin-bottom: -10%;
+  margin-left: -25%;
+  padding: 0px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
 
 }
 
 #tent {
   align-self: flex-start;
   justify-content: flex-end;
-/* margin-bottom: -23px; */
-/* padding-bottom: 100px; */
-  /*margin-top: -10%;*/
   margin-left: 54%;
   z-index: 1;
   width: 30%;
 }
 
 #trees {
-    z-index: 1;
+  z-index: 1;
 }
 
-#tree1{
-  /*margin-top: -10%;*/
+#tree1 {
   margin-left: 2%;
   padding: 0px;
   width: 25%;
   z-index: 2;
 }
-#tree2{
-  /*margin-top: -10%;*/
+
+#tree2 {
   margin-left: 5%;
   width: 10%;
   z-index: 2;
 }
-#tree3{
-  /*margin-top: -10%;*/
+#tree3 {
   margin-left: 8%;
   width: 15%;
   z-index: 2;
